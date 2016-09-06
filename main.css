@@ -3,7 +3,8 @@
 /*	Dark Blue:		073763			*/
 /*	Yellow:			F1C232			*/
 /*	Orange:			FF8202			*/
-/*	Red:;			990000			*/
+/*	Red:			990000			*/
+/*	Snow:			FFFAFB			*/
 /*									*/
 /* ================================ */
 
@@ -13,8 +14,13 @@ body {
 	background-color: #FFFAFB;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, a {
+h1, h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+	font-size: 36px;
+	text-transform: uppercase;
 }
 
 /* ========== HEADER ============ */
@@ -30,7 +36,7 @@ header img {
 	max-width: 90vw;
 	position: relative;
     transform: translateX(-50%);
-	width: 400px;
+	width: 500px;
 }
 
 main {
@@ -50,13 +56,15 @@ section.conteudo h2 {
 }
 
 .areas img {
-	height: 100px;
+	height: 120px;
 	margin: 15px;
-	width: 100px;
+	width: 120px;
 }
 
 figcaption {
-	font-size: 18px;
+	font-size: 28px;
+	font-weight: lighter;
+	text-transform: uppercase;
 }
 
 /* ========== CURSOS ============ */
