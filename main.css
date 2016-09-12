@@ -18,9 +18,16 @@ h1, h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	font-family: 'Titillium Web', sans-serif;
 }
 
+h2, h3 {
+	text-transform: uppercase;
+}
+
 h2 {
 	font-size: 36px;
-	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 28px;
 }
 
 /* ========== HEADER ============ */
@@ -43,7 +50,7 @@ main {
 	text-align: center;
 }
 
-section.conteudo h2 {
+section.conteudo h2, h3 {
 	margin: 50px auto;
 }
 
@@ -85,9 +92,22 @@ figcaption {
 	margin-bottom: 20px;
 }
 
+.cursos img {
+	max-height: 200px;
+	width: auto;
+}
+
+.ingles, .redacao, .hipnose, .coaching {
+	height: 300px;
+	padding: 0;
+}
+
 .ingles {
 	background-color: #073763;
-	color: white;
+}
+
+.ingles:hover {
+	background: black;
 }
 
 .redacao {
@@ -100,8 +120,14 @@ figcaption {
 
 .coaching {
 	background-color: #990000;
-	color: white;
 }
+
+section.cursos figure {
+	border: 1px solid;
+	min-height: 300px;
+	width: 100%;
+}
+
 
 /* ========== RODAPÉ ============ */
 
