@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html ng-app="grecoLatino" lang="pt">
 <head>
 	<title>Instituto Greco Latino</title>
 	
@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
 	<link rel="stylesheet" href="main.css">
 </head>
@@ -40,49 +41,45 @@
 
 	<main class="container-fluid">
 
-		<section class="conteudo">
-			<h2>Áreas de Estudo</h2>
+		<section ng-controller="cursosCtrl">
+
+			<h2 class="titulo">Áreas de Estudo</h2>
 			<div class="areas">
 				<figure>
-					<img src="img/icone_ingles.png" alt="">
+					<a href="">
+						<img src="img/icone_ingles.png" alt="" ng-click="area = 'ingles'">
+					</a>
 					<figcaption>Inglês</figcaption>
 				</figure>
 				<figure>
-					<img src="img/icone_redacao.png" alt="">
+					<a href="">
+						<img src="img/icone_redacao.png" alt="" ng-click="area = 'redacao'">
+					</a>
 					<figcaption>Redação</figcaption>
 				</figure>
 				<figure>
-					<img src="img/icone_hipnose.png" alt="">
+					<a href="">
+						<img src="img/icone_hipnose.png" alt="" ng-click="area = 'hipnose'">
+					</a>
 					<figcaption>Hipnose</figcaption>
 				</figure>
 				<figure>
-					<img src="img/icone_coaching.png" alt="">
+					<a href="">
+						<img src="img/icone_coaching.png" alt="" ng-click="area = 'coaching'">
+					</a>
 					<figcaption>Coaching</figcaption>
 				</figure>
 			</div>
 
 			<hr>
 
-			<!-- https://davidwalsh.name/css-flip -->
-			<!-- <h2>Cursos</h2>
-			<section class="cursos">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3 ingles">
-						<figure></figure>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 redacao">
-						<figure></figure>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 hipnose">
-						<figure></figure>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 coaching">
-						<figure></figure>
-					</div>
-				</div>
-			</section> -->
+			<section id="detalhes">
+				<h3>{{area}}</h3>
+				<div ng-repeat="curso in cursos(area)">
+	                <curso nome="{{curso.nome}}" descricao="{{curso.descricao}}" horas="{{cursos.horas}}">====</curso>
+	            </div>
+			</section>
 		</section>
-
 
 	</main>
 
@@ -94,9 +91,12 @@
 		</div>
 	</footer> -->
 	
-	<script src="descricoes.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.min.js"></script>
+	<script src="app.js"></script>
+	<script src="diretivas.js"></script>
 	<script src="main.js"></script>
 </body>
-</html>
+</html>	

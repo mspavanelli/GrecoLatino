@@ -14,12 +14,13 @@ body {
 	background-color: #FFFAFB;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, a, figcaption {
+h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, a, figcaption {
 	font-family: 'Titillium Web', sans-serif;
 }
 
 h2, h3 {
 	text-transform: uppercase;
+	margin: 50px auto;
 }
 
 h2 {
@@ -28,6 +29,14 @@ h2 {
 
 h3 {
 	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+span {
+	text-align: left;
 }
 
 /* ========== HEADER ============ */
@@ -50,10 +59,6 @@ main {
 	text-align: center;
 }
 
-section.conteudo h2, h3 {
-	margin: 50px auto;
-}
-
 /* ========== ÁREAS ============ */
 
 .areas {
@@ -72,6 +77,10 @@ figcaption {
 	font-size: 28px;
 	font-weight: lighter;
 	text-transform: uppercase;
+}
+
+.areas img {
+	
 }
 
 /* ========== CURSOS ============ */
