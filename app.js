@@ -1,11 +1,11 @@
 angular.module('grecoLatino', ['ngSanitize']).
 	controller('cursosCtrl', function($scope) {
-        $scope.area = "Inglês";
+        // $scope.area = "Inglês";
 
 		$scope.cursos = function(area) {
 			switch(area) {
-				case 'ingles': return ingles;
-				case 'redacao': return redacao;
+				case 'inglês': return ingles;
+				case 'redação': return redacao;
 				case 'coaching': return coaching;
 				case 'hipnose': return hipnose;
 			}
