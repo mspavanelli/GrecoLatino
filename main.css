@@ -1,42 +1,33 @@
 /* ============ COLORS ============ */
 /*									*/
-/*	Dark Blue:		073763			*/
-/*	Yellow:			F1C232			*/
-/*	Orange:			FF8202			*/
-/*	Red:			990000			*/
-/*	Snow:			FFFAFB			*/
+/*	Blue:			#2C5E8C			*/
+/*	Green:			#43735E			*/
+/*	Yellow:			#ABAB33			*/
+/*	Orange:			#AE6F2F			*/
+/*	Red:			#8C3B2B			*/
 /*									*/
 /* ================================ */
 
 /* ============ BASE ============ */
 
+html, body {
+	background-color: #F6F6F6;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
-	background-color: #FFFAFB;
+	margin-bottom: 60px;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, a, figcaption {
-	font-family: 'Titillium Web', sans-serif;
-}
-
-h2, h3 {
-	text-transform: uppercase;
-	margin: 50px auto;
-}
-
-h2 {
-	font-size: 36px;
-}
-
-h3 {
-	font-size: 28px;
-}
-
-h4 {
-	font-size: 22px;
-}
-
-span {
-	text-align: left;
+	font-family: 'Helvetica Neue', "Helvetica", "Roboto" sans-serif;
 }
 
 /* ========== HEADER ============ */
@@ -44,110 +35,165 @@ span {
 header {
 	margin-top: 51px;
 	padding: 20px 0;
-}
-
-header img {
-	height: auto;
-	left: 50%;
-	max-width: 90vw;
-	position: relative;
-    transform: translateX(-50%);
-	width: 500px;
-}
-
-main {
 	text-align: center;
 }
 
-/* ========== ÁREAS ============ */
-
-.areas {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+header h1 {
+	font-size: 3em;
+	font-weight: 300;
 }
 
-.areas img {
-	height: 120px;
-	margin: 15px;
-	width: 120px;
+header h2 {
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
-figcaption {
-	font-size: 28px;
-	font-weight: lighter;
-	text-transform: uppercase;
+/* ========== MENU ============ */
+
+ nav.menu {
+	 display: flex;
+	 justify-content: center;
+	 height: 230px;
+ }
+
+.item {
+	width: 120px; /* Mudar para 1/5 da div pai */
+	height: 230px;
+	float: left;
+	-webkit-transition: height .3s;
 }
 
-.areas img {
-	
+.item-ingles, .area-ingles {
+	background-color: #2C5E8C;
+}
+
+.item-financas, .area-financas {
+	background-color: #43735E;
+}
+
+.item-redacao, .area-redacao {
+	background-color: #ABAB33;
+}
+
+.item-hipnose, .area-hipnose {
+	background-color: #AE6F2F;
+}
+
+.item-coaching, .area-coaching {
+	background-color: #8C3B2B;
+}
+
+img.icone{
+	display: block;
+	margin:50px auto;
+	background-color: rgba(255,255,255,.15);
+	width:60px;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;
+}
+
+p.texto{
+	font-size: 1.2em;
+	font-family: 'Hiragino Sans', sans-serif;
+	font-weight: 100;
+	color:white;
+	text-align: center;
+	padding-top:10px;
+	opacity: .8;
+	-webkit-transition: padding-top .3s;
+}
+
+div.item:hover{
+	height:250px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.item:hover p.texto{
+	padding-top: 30px;
+	opacity: 1;
+}
+
+.item:hover img.icone{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
 }
 
 /* ========== CURSOS ============ */
 
-.cursos .row > div {
-	height: 200px;
-}
-
-.cursos ul {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	padding: 20px;
-	text-align: center;
-}
-
-.cursos li {
-	margin-bottom: 20px;
-}
-
-.cursos img {
-	max-height: 200px;
-	width: auto;
-}
-
-.ingles, .redacao, .hipnose, .coaching {
-	height: 300px;
+main {
+	position: relative;
+	margin-top: 100px;
 	padding: 0;
 }
 
-.ingles {
-	background-color: #073763;
+section.area, section.area small {
+	color: white;
+	font-family: 'Hiragino Sans', 'Roboto', sans-serif;
+	padding-bottom: 30px;
 }
 
-.ingles:hover {
-	background: black;
+section.area h1 {
+	font-weight: 200;
 }
 
-.redacao {
-	background-color: #F1C232;
+section.area h2 {
+	font-weight: 100;
+	font-size: 2em;
 }
 
-.hipnose {
-	background-color: #FF8202;
+section.area small {
+	font-weight: 100;
 }
 
-.coaching {
-	background-color: #990000;
+section.area .titulo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
-section.cursos figure {
-	border: 1px solid;
-	min-height: 300px;
-	width: 100%;
+section.area img {
+	margin-top: 20px;
+	margin-right: 2em;
+	width: 3em;
+	height: 3em;
 }
 
+.curso-titulo h1 {
+	font-size: 22px;
+}
+
+.curso .curso-descricao {
+	background-color: rgba(255,255,255,.2);
+	color: #F6F6F6;
+	padding: 15px 25px;
+	margin-top: 25px;
+	font-weight: 200;
+	text-align: justify;
+}
+
+.curso .curso-descricao h1 {
+	font-size: 18px;
+	margin: 0 auto 10px auto;
+}
 
 /* ========== RODAPÉ ============ */
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #222;
 }
 
-footer p {
+.container {
+	width: auto;
+	max-width: 680px;
+	padding: 0 15px;
+}
+.container .text-muted {
 	margin: 20px 0;
 }

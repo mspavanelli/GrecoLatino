@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="grecoLatino" lang="pt">
+<html lang="pt">
 <head>
 	<title>Instituto Greco Latino</title>
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -29,74 +27,181 @@
 					<!-- <li class="active"><a href="#">Home</a></li> -->
 
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</nav>
 
 	<header>
-		<img src="img/logo.png" alt="Logo da Greco Latino Intituto">
+		<h1>Instituto Greco Latino</h1>
+		<h2>Slogan Opcional</h2>
+		<!-- <img src="img/logo.png" alt="Logo da Greco Latino Intituto"> -->
 	</header>
-	
+
 	<hr>
 
-	<main class="container-fluid">
+	<nav class="menu">
 
-		<section ng-controller="cursosCtrl">
+		<div class="item item-ingles">
+			<img src="img/ingles.png" alt="Inglês" class="icone">
+			<p class="texto">Inglês</p>
+		</div>
 
-			<h2 class="titulo">Áreas de Estudo</h2>
-			<div class="areas">
-				<figure>
-					<a href="">
-						<img src="img/icone_ingles.png" alt="" ng-click="area = 'inglês'">
-					</a>
-					<figcaption>Inglês</figcaption>
-				</figure>
-				<figure>
-					<a href="">
-						<img src="img/icone_redacao.png" alt="" ng-click="area = 'redação'">
-					</a>
-					<figcaption>Redação</figcaption>
-				</figure>
-				<figure>
-					<a href="">
-						<img src="img/icone_hipnose.png" alt="" ng-click="area = 'hipnose'">
-					</a>
-					<figcaption>Hipnose</figcaption>
-				</figure>
-				<figure>
-					<a href="">
-						<img src="img/icone_coaching.png" alt="" ng-click="area = 'coaching'">
-					</a>
-					<figcaption>Coaching</figcaption>
-				</figure>
+		<div class="item item-financas">
+			<img src="img/financas.png" alt="Finanças" class="icone">
+			<p class="texto">Finanças</p>
+		</div>
+
+		<div class="item item-redacao">
+			<img src="img/redacao.png" alt="Redação" class="icone">
+			<p class="texto">Redação</p>
+		</div>
+
+		<div class="item item-hipnose">
+			<img src="img/hipnose.png" alt="Hipnose" class="icone">
+			<p class="texto">Hipnose</p>
+		</div>
+
+		<div class="item item-coaching">
+			<img src="img/coaching.png" alt="Coaching" class="icone">
+			<p class="texto">Coaching</p>
+		</div>
+
+		<!-- <div class="contenedor" id="seis">
+			<img class="icon" src="img/coaching.png">
+			<p class="texto">correo</p>
+		</div> -->
+	</nav>
+
+	<main>
+
+		<!--  INGLES -->
+		<section class="area area-ingles">
+			<div class="container">
+				<div class="titulo">
+					<img src="img/ingles.png" alt="">
+					<h1>Inglês</h1>
+				</div>
+				<h2>Cursos</h2>
+				<div class="curso">
+					<div class="curso-titulo">
+						<h1>Inglês Situacional</h1>
+					</div>
+					<div class="curso-descricao">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam facere ducimus asperiores, corporis voluptatibus blanditiis quod aliquid culpa eum quia nulla, pariatur aliquam itaque autem soluta placeat deleniti. Molestias!
+					</div>
+				</div>
 			</div>
+		</section>
 
-			<hr>
+		<!--  FINANCAS -->
+		<section class="area area-financas">
+			<div class="container">
+				<div class="titulo">
+					<img src="img/financas.png" alt="">
+					<h1>Finanças</h1>
+				</div>
+				<h2>Cursos</h2>
+				<div class="curso">
+					<div class="curso-titulo">Finanças Pessoais</div>
+					<div class="curso-descricao">
+						Em Breve
+					</div>
+				</div>
+			</div>
+		</section>
 
-			<section id="detalhes">
-				<h3>{{area}}</h3>
-				<div ng-repeat="curso in cursos(area)">
-	                <curso nome="{{curso.nome}}" descricao="{{curso.descricao}}" horas="{{cursos.horas}}">====</curso>
-	            </div>
-			</section>
+		<!--  REDACAO -->
+		<section class="area area-redacao">
+			<div class="container">
+				<div class="titulo">
+					<img src="img/redacao.png" alt="">
+					<h1>Redação</h1>
+				</div>
+				<h2>Cursos</h2>
+				<div class="curso">
+					<div class="curso-titulo">
+						<h1>Concursos</h1>
+					</div>
+					<div class="curso-descricao">
+						O curso de redação geral é voltado para todos aqueles que desejam melhorar a sua forma de se comunicar com o mundo por meio da palavra escrita. Como mandar um email, como escrever um bilhete, como fazer uma solicitação simples de um documento num órgão público, como fazer uma reclamação ou um elogio e tantas outras situações simples do cotidiano que nos pegamos sem as técnicas necessárias para que nos comuniquemos de forma correta e elegante. Em suas 16h de duração, o curso abordará aspectos estruturais, semânticos e estilístcos para que a pessoa tenha na escrita um lindo cartão de visita.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  HIPNOSE -->
+		<section class="area area-hipnose">
+			<div class="container">
+				<div class="titulo">
+					<img src="img/hipnose.png" alt="">
+					<h1>Hipnose</h1>
+				</div>
+				<h2>Cursos</h2>
+				<div class="curso">
+					<div class="curso-titulo">
+						<h1>Técnicas de Hipnose Centrada na Solução de Problemas</h1>
+					</div>
+					<div class="row">
+						<div class="curso-descricao">
+							<p>
+								Curso baseado nos mais modernos estudos de hipnoterapia [Psicologia da sugestão] e técnicas de aplicação [Hipnotismo], desenvolvidas pelo terapeuta Emile Coue (1857-1926), juntamente com os médicos Hypolite Bernheim e Liébeaut.
+							</p>
+							<p>
+								Direcionado a todos os que se interessam pelos estudos e conhecimentos dos potênciais, recursos e mecanismos de funcionamento da mente humana.
+							</p>
+						</div>
+						<div class="curso-descricao">
+							<h1>Temática do Curso</h1>
+							<ul>
+								<li>A Hipnose: Origem, História e Filosofia</li>
+								<li>O seu uso diário e profissional</li>
+								<li>Técnica de Aplicação: A Auto-Hipnose</li>
+								<li>Técnica de Aplicação: A Hipnose no Outro</li>
+								<li>Exercícios práticos entre os alunos</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  COACHING -->
+		<section class="area area-coaching">
+			<div class="container">
+				<div class="titulo">
+					<img src="img/coaching.png" alt="">
+					<h1>Coaching</h1>
+				</div>
+				<h2>Cursos</h2>
+				<div class="curso">
+					<div class="curso-titulo">
+						<h1>
+							Introdução ao Coaching
+							<small>
+								Ferramentas para o autodesenvolvimento
+							</small>
+						</h1>
+					</div>
+					<div class="curso-descricao">
+						O curso permite ao participante desenvolver um processo que visa facilitar o seu autoconhecimento e o aprendizado para realização de seus objetivos. Nesse sentido, este curso reflete a importância da autogestão de sua vida e carreira frente as aceleradas mudanças em nosso mundo atual. Além disso, apresenta um panorama geral do que é coaching e como ele funciona na prática, promovendo aos alunos o aprendizado de ferramentas que auxiliarão a elaboração de uma estratégia para atingir suas próprias metas.
+					</div>
+				</div>
+			</div>
 		</section>
 
 	</main>
 
-<!-- 	<footer>
+	<footer class="footer">
 		<div class="container">
-			<p class="text-muted">
-				Rua Juraraterê, 73 - Sobreloja - Itaim Pta. S. Paulo  08040-040
+			<p class="text-muted text-center">
+				Copyright © 2017 Instituto Greco Latino
 			</p>
 		</div>
-	</footer> -->
-	
+	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.8/angular-sanitize.min.js"></script>
-	<script src="app.js"></script>
-	<script src="diretivas.js"></script>
+	<script src="animatescroll.min.js"></script>
 	<script src="main.js"></script>
 </body>
-</html>	
+</html>
