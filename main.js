@@ -11,6 +11,4 @@ $(document).ready(function() {
 	var areas = ['ingles', 'financas', 'redacao', 'hipnose', 'coaching'];
 	areas.forEach(item => scroll(".item-"+item, ".area-"+item));
 
-	$('.carrosel').slick();
-
 });

@@ -50,7 +50,7 @@ header h1 {
 
 header h2 {
 	font-size: 2em;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 30px;
 }
 
@@ -114,8 +114,8 @@ p.texto{
 
 div.item:hover{
 	height:250px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	/*border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;*/
 }
 
 .item:hover p.texto{
