@@ -2,11 +2,11 @@
 <html lang="pt">
 <head>
 	<title>Instituto Greco Latino</title>
-
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,12 +14,12 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
+				</button> -->
 				<a class="navbar-brand" href="#">Greco Latino</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
@@ -32,12 +32,12 @@
 	</nav>
 
 	<header>
-		<h1>Instituto Greco Latino</h1>
-		<h2>Slogan Opcional</h2>
-		<!-- <img src="img/logo.png" alt="Logo da Greco Latino Intituto"> -->
+		<h2>Espaço Livre de Aprendizagem</h2>
+		<img src="img/logo.png" alt="Logo da Greco Latino Intituto">
 	</header>
 
-	<hr>
+	<!-- <hr> -->
+	<br>
 
 	<nav class="menu">
 
@@ -84,12 +84,65 @@
 				<h2>Cursos</h2>
 				<div class="curso">
 					<div class="curso-titulo">
-						<h1>Inglês Situacional</h1>
+						<h1>Essencial English</h1>
 					</div>
 					<div class="curso-descricao">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam facere ducimus asperiores, corporis voluptatibus blanditiis quod aliquid culpa eum quia nulla, pariatur aliquam itaque autem soluta placeat deleniti. Molestias!
+						O Essencial English Course foi desenvolvido para quem quer aprender a falar inglês de uma maneira efetiva e pouco burocrática. As aulas são dinâmicas com nenhuma ênfase na gramática e com muita interação entre os alunos que falarão inglês desde o primeiro minuto de aula até o final do programa. Esse método é baseado em técnicas de neurolinguística utilizadas nas melhores escolas do planeta para ensino de idiomas. O aluno estará sempre motivado e disposto a participar. O método é realmente muito cativante e agradável. Vale a pena participar desse programa.
 					</div>
 				</div>
+
+				<h3>Turmas</h3>
+				<table class="table table-condensed">
+					<tr>
+						<th>Código</th>
+						<th class="text-center">Horário</th>
+						<th class="text-right">Dia da Semana</th>
+					</tr>
+					<tr>
+						<td>EES1701</td>
+						<td class="text-center">14h15 - 16h15</td>
+						<td class="text-right">Terça-feira</td>
+					</tr>
+					<tr>
+						<td>EES1702</td>
+						<td class="text-center">19h00 - 21h00</td>
+						<td class="text-right">Terça-feira</td>
+					</tr>
+					<tr>
+						<td>EES1703</td>
+						<td class="text-center">14h15 - 16h15</td>
+						<td class="text-right">Quinta-feira</td>
+					</tr>
+					<tr>
+						<td>EES1704</td>
+						<td class="text-center">8h00 - 10h00</td>
+						<td class="text-right">Sábado</td>
+					</tr>
+					<tr>
+						<td>EES1705</td>
+						<td class="text-center">10h30 - 12h30</td>
+						<td class="text-right">Sábado</td>
+					</tr>
+				</table>
+
+				<h3>Valores</h3>
+				<h4>Regular</h4>
+				<hr class="descricao">
+				<p>R$3.120,00 ou 13 &times; $240,00 + mais custas com material</p>
+				<h4>Promocional</h4>
+				<hr class="descricao">
+				<p>
+					<span class="bold">
+						R$1.870,00 ou 11 &times; $170,00 com material incluso*
+					</span>
+				</p>
+				<p class="info">*oferta válida até 3 de fevereiro de 2017 ou enquanto durarem as vagas promocionais</p>
+				<button class="btn btn-success btn-md">
+					<a href="https://goo.gl/forms/MLCOr5IQMcyBm5xi1" target="_blank">
+						Reservar Oferta
+					</a>
+				</button>
+
 			</div>
 		</section>
 
@@ -149,8 +202,7 @@
 							<p>
 								Direcionado a todos os que se interessam pelos estudos e conhecimentos dos potênciais, recursos e mecanismos de funcionamento da mente humana.
 							</p>
-						</div>
-						<div class="curso-descricao">
+							<br />
 							<h1>Temática do Curso</h1>
 							<ul>
 								<li>A Hipnose: Origem, História e Filosofia</li>
@@ -177,6 +229,7 @@
 					<div class="curso-titulo">
 						<h1>
 							Introdução ao Coaching
+							<br />
 							<small>
 								Ferramentas para o autodesenvolvimento
 							</small>
@@ -200,7 +253,8 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script src="animatescroll.min.js"></script>
 	<script src="main.js"></script>
 </body>
