@@ -1,0 +1,65 @@
+.menu
+  display: flex
+  height: 230px
+  justify-content: center
+
+.item
+  float: left
+  height: 230px // Mudar para 1/5 da div pai
+  transition: height .3s
+  width: 120px
+
+  &:hover
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+    height: 250px
+
+    .texto
+      opacity: 1
+      padding-top: 30px
+
+    .icone
+      box-shadow: 0 $icone-shadow-color
+
+
+.item-ingles,
+.area-ingles
+  background-color: $blue
+
+.item-financas,
+.area-financas
+  background-color: $green
+
+.item-redacao,
+.area-redacao
+  background-color: $yellow
+
+.item-hipnose,
+.area-hipnose
+  background-color: $orange
+
+.item-coaching,
+.area-coaching
+  background-color: $red
+
+.icone
+  background-color: $background-color
+  border-radius: 50%
+  box-shadow: 0 0 0 30px $white
+  box-sizing: border-box
+  display: block
+  margin: 50px auto
+  padding: 10px
+  transition: box-shadow .4
+  width: 60px
+
+p
+  .texto
+    color: $white
+    font-family: 'Hiragino Sans', sans-serif
+    font-size: 1.2em
+    font-weight: 100
+    opacity: .8
+    padding-top: 10px
+    text-align: center
+    transition: padding-top .3s

@@ -57,3 +57,6 @@ fabric.properties
 
 node_modules/
 ignore/
+style.css.map
+*.scssc
+*.sassc

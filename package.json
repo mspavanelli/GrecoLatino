@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mspavanelli/GrecoLatino/issues"
   },
-  "homepage": "https://github.com/mspavanelli/GrecoLatino#readme"
+  "homepage": "https://github.com/mspavanelli/GrecoLatino#readme",
+  "devDependencies": {
+    "sass-lint": "^1.10.2"
+  }
 }
